@@ -54283,7 +54283,7 @@ A.Aa.prototype={
 M(a){return B.C3}}
 A.ze.prototype={
 M(a){var s=null
-return A.QS(A.C_($.a2d(),s,A.xG(A.a([A.eH(B.cz,B.IX,s,s,s,s,B.a_,s),A.eH(B.cz,B.J_,s,s,s,s,B.a_,s),A.a5T(A.eH(s,B.IY,s,s,s,s,B.a_,s),new A.Pi(a))],t.E),B.d9)))}}
+return A.QS(A.C_($.a2d(),s,A.xG(A.a([A.eH(B.cz,B.IX,s,s,s,s,B.a_,s),A.eH(B.cz,B.J0,s,s,s,s,B.a_,s),A.a5T(A.eH(s,B.IY,s,s,s,s,B.a_,s),new A.Pi(a))],t.E),B.d9)))}}
 A.Pi.prototype={
 $0(){A.f0(this.a).h9(A.mJ(new A.Ph(),null,t.z))},
 $S:0}
@@ -54301,7 +54301,7 @@ A.f0(s).h9(A.mJ(new A.Yo(this),null,t.z))}},
 M(a){var s,r,q,p,o=this,n=null
 if(o.e){o.w7(0,a)
 o.e=!1}s=$.a2d()
-r=A.eH(B.cz,B.J0,n,n,n,n,B.a_,n)
+r=A.eH(B.cz,B.J_,n,n,n,n,B.a_,n)
 q=o.d
 p=t.E
 return A.QS(A.C_(s,n,A.lY(A.xG(A.a([r,q[2],q[0],A.a7h(A.a([A.QV(B.xU,B.nw,new A.Ym(o,a),B.a_,new A.cg(A.Lm(10),B.o)),A.Cj(n,n,A.ct(a,n,t.w).w.a.a*0.01),A.QV(B.xS,B.C5,new A.Yn(o,a),B.a_,new A.cg(A.Lm(10),B.o))],p),B.eh,B.f0,B.f1),A.eH(n,A.tb("Score: "+o.f,B.tj,n),n,n,n,n,B.a_,n)],p),B.d9),n,n)))}}
@@ -58340,8 +58340,8 @@ B.IX=new A.fi("What is good to eat?",null,B.fy,null,null)
 B.tk=new A.o(!0,null,null,null,null,null,20,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.IY=new A.fi("Play the Game!",null,B.tk,null,null)
 B.IZ=new A.fi("Back to the Game!",null,B.tk,null,null)
-B.J_=new A.fi("A message from our friend ChatGPT:\nHey there! Do you know why healthy food is so important for you? Well, I'll tell you! As ChatGPT, I say that healthy food is like magic fuelfor your body. It helps you grow up strong, smart, and full of energy!\nWhen you eat healthy foods like fruits, vegetables, and whole grains, they give you the power to be a superhero! They have special vitaminsand minerals that make your body feel good and help you stay healthy.\nHealthy foods make your bones and muscles strong, just like the superheroes you love! They also make your brain grow big and smart, so you can learn new things and have lots of fun.\nGuess what? Healthy foods protect you from getting sick too! They have special shields called antioxidants that keep your body safe from germs. That way, you can stay strong and be ready to play and have adventures.\nSo remember, my friend, eating healthy foods like colorful fruits and crunchy vegetables makes you a superhero too! You get the strength, energy, and superpowers to do amazing things.\nListen to your parents or caregivers who want the best for you. They know that eating healthy food is like having a secret superpower to grow up strong and smart!\nNow, go out there and be a healthy superhero! \ud83e\udd66\ud83d\udcaa\ud83d\ude04",null,B.tj,B.dD,null)
-B.J0=new A.fi("Is this healthy?",null,B.fy,null,null)
+B.J_=new A.fi("Is this healthy?",null,B.fy,null,null)
+B.J0=new A.fi("A message from our friend ChatGPT:\nHey there! Do you know why healthy food is so important for you? Well, I'll tell you! As ChatGPT, I say that healthy food is like magic fuelfor your body. It helps you grow up strong, smart, and full of energy!\nWhen you eat healthy foods like fruits, vegetables, and whole grains, they give you the power to be a superhero! They have special vitaminsand minerals that make your body feel good and help you stay healthy.",null,B.tj,B.dD,null)
 B.wj=new A.z(4289956095)
 B.wb=new A.z(4286336511)
 B.w9=new A.z(4284817407)
