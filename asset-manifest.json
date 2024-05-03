@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.a499ef77.css",
-    "main.js": "/static/js/main.4b39ac57.js",
+    "main.css": "/static/css/main.fc208080.css",
+    "main.js": "/static/js/main.c8324912.js",
+    "static/media/experience_IT.png": "/static/media/experience_IT.3b953656d9f2979a35e6.png",
+    "static/media/experience_2.png": "/static/media/experience_2.67b71819785656259c9d.png",
+    "static/media/portfolio_pacman.gif": "/static/media/portfolio_pacman.5d6514fef55e515b6543.gif",
+    "static/media/bouldering.png": "/static/media/bouldering.733d72c1761e5949fd09.png",
+    "static/media/portfolio_website.png": "/static/media/portfolio_website.f9cfc16e4c4fad72ecb8.png",
+    "static/media/portfolio_housing.png": "/static/media/portfolio_housing.a3a71f9000e0e5e133e8.png",
     "static/media/ibm-plex-serif-latin-400-normal.woff2": "/static/media/ibm-plex-serif-latin-400-normal.130c2d62503949e4d4e6.woff2",
     "static/media/ibm-plex-sans-latin-400-normal.woff2": "/static/media/ibm-plex-sans-latin-400-normal.198edc1f5e61a3940f35.woff2",
     "static/media/ibm-plex-serif-latin-400-normal.woff": "/static/media/ibm-plex-serif-latin-400-normal.82236381b6e1ffd399b6.woff",
     "static/media/ibm-plex-sans-latin-400-normal.woff": "/static/media/ibm-plex-sans-latin-400-normal.26f87999b316dfb9a41e.woff",
     "static/media/ibm-plex-sans-latin-ext-400-normal.woff2": "/static/media/ibm-plex-sans-latin-ext-400-normal.f16460285d7ee089d39e.woff2",
     "static/media/ibm-plex-serif-latin-ext-400-normal.woff2": "/static/media/ibm-plex-serif-latin-ext-400-normal.061ffefb0a8336f5c14c.woff2",
-    "static/media/portfolio_housing.png": "/static/media/portfolio_housing.6ca4c548e2a0ef090153.png",
     "static/media/mental.png": "/static/media/mental.6b5f65b65b2dc6522dd3.png",
     "static/media/ibm-plex-sans-latin-ext-400-normal.woff": "/static/media/ibm-plex-sans-latin-ext-400-normal.3d8d457e5b04886f0311.woff",
     "static/media/ibm-plex-serif-latin-ext-400-normal.woff": "/static/media/ibm-plex-serif-latin-ext-400-normal.34eccc4a704034c029f7.woff",
-    "static/media/experience_2.png": "/static/media/experience_2.5eb016ae592af67a9c63.png",
-    "static/media/portfolio_website.png": "/static/media/portfolio_website.92381ab738107873053b.png",
     "static/media/ibm-plex-serif-cyrillic-400-normal.woff2": "/static/media/ibm-plex-serif-cyrillic-400-normal.bf1df6d54ea50357fd88.woff2",
     "static/media/ibm-plex-serif-cyrillic-400-normal.woff": "/static/media/ibm-plex-serif-cyrillic-400-normal.7ca53e83f0e6e650fcd1.woff",
-    "static/media/experience_IT.png": "/static/media/experience_IT.1107f56002335e994980.png",
     "static/media/ibm-plex-sans-cyrillic-400-normal.woff2": "/static/media/ibm-plex-sans-cyrillic-400-normal.496b1fd454d2cf535c9e.woff2",
-    "static/media/portfolio_pacman.png": "/static/media/portfolio_pacman.3555c7f4484258a1b98b.png",
     "static/media/ibm-plex-sans-cyrillic-400-normal.woff": "/static/media/ibm-plex-sans-cyrillic-400-normal.9ad4be8ee1fdeec077cf.woff",
     "static/media/ibm-plex-serif-cyrillic-ext-400-normal.woff2": "/static/media/ibm-plex-serif-cyrillic-ext-400-normal.d51fb4e1b62b7a3fd759.woff2",
     "static/media/ibm-plex-sans-greek-400-normal.woff2": "/static/media/ibm-plex-sans-greek-400-normal.3a057227a4ac726b71f5.woff2",
@@ -31,11 +32,11 @@
     "static/media/ibm-plex-serif-vietnamese-400-normal.woff2": "/static/media/ibm-plex-serif-vietnamese-400-normal.c81e16ec671bf9297d81.woff2",
     "static/media/ibm-plex-serif-vietnamese-400-normal.woff": "/static/media/ibm-plex-serif-vietnamese-400-normal.dc02b662511ad675b68c.woff",
     "index.html": "/index.html",
-    "main.a499ef77.css.map": "/static/css/main.a499ef77.css.map",
-    "main.4b39ac57.js.map": "/static/js/main.4b39ac57.js.map"
+    "main.fc208080.css.map": "/static/css/main.fc208080.css.map",
+    "main.c8324912.js.map": "/static/js/main.c8324912.js.map"
   },
   "entrypoints": [
-    "static/css/main.a499ef77.css",
-    "static/js/main.4b39ac57.js"
+    "static/css/main.fc208080.css",
+    "static/js/main.c8324912.js"
   ]
 }
