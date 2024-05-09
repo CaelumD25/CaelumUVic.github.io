@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.efdadc07.css",
-    "main.js": "/static/js/main.bba5da8a.js",
+    "main.js": "/static/js/main.8ae6db73.js",
     "static/media/experience_IT.png": "/static/media/experience_IT.3b953656d9f2979a35e6.png",
     "static/media/experience_2.png": "/static/media/experience_2.67b71819785656259c9d.png",
     "static/media/cycling.png": "/static/media/cycling.980254b4892113b57c9b.png",
@@ -34,10 +34,10 @@
     "static/media/ibm-plex-serif-vietnamese-400-normal.woff": "/static/media/ibm-plex-serif-vietnamese-400-normal.dc02b662511ad675b68c.woff",
     "index.html": "/index.html",
     "main.efdadc07.css.map": "/static/css/main.efdadc07.css.map",
-    "main.bba5da8a.js.map": "/static/js/main.bba5da8a.js.map"
+    "main.8ae6db73.js.map": "/static/js/main.8ae6db73.js.map"
   },
   "entrypoints": [
     "static/css/main.efdadc07.css",
-    "static/js/main.bba5da8a.js"
+    "static/js/main.8ae6db73.js"
   ]
 }
