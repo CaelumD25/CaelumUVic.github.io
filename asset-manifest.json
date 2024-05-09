@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.fc208080.css",
-    "main.js": "/static/js/main.c8324912.js",
+    "main.css": "/static/css/main.efdadc07.css",
+    "main.js": "/static/js/main.bba5da8a.js",
     "static/media/experience_IT.png": "/static/media/experience_IT.3b953656d9f2979a35e6.png",
     "static/media/experience_2.png": "/static/media/experience_2.67b71819785656259c9d.png",
+    "static/media/cycling.png": "/static/media/cycling.980254b4892113b57c9b.png",
     "static/media/portfolio_pacman.gif": "/static/media/portfolio_pacman.5d6514fef55e515b6543.gif",
     "static/media/bouldering.png": "/static/media/bouldering.733d72c1761e5949fd09.png",
+    "static/media/mental.png": "/static/media/mental.7efac635b920d4687668.png",
     "static/media/portfolio_website.png": "/static/media/portfolio_website.f9cfc16e4c4fad72ecb8.png",
     "static/media/portfolio_housing.png": "/static/media/portfolio_housing.a3a71f9000e0e5e133e8.png",
     "static/media/ibm-plex-serif-latin-400-normal.woff2": "/static/media/ibm-plex-serif-latin-400-normal.130c2d62503949e4d4e6.woff2",
@@ -14,7 +16,6 @@
     "static/media/ibm-plex-sans-latin-400-normal.woff": "/static/media/ibm-plex-sans-latin-400-normal.26f87999b316dfb9a41e.woff",
     "static/media/ibm-plex-sans-latin-ext-400-normal.woff2": "/static/media/ibm-plex-sans-latin-ext-400-normal.f16460285d7ee089d39e.woff2",
     "static/media/ibm-plex-serif-latin-ext-400-normal.woff2": "/static/media/ibm-plex-serif-latin-ext-400-normal.061ffefb0a8336f5c14c.woff2",
-    "static/media/mental.png": "/static/media/mental.6b5f65b65b2dc6522dd3.png",
     "static/media/ibm-plex-sans-latin-ext-400-normal.woff": "/static/media/ibm-plex-sans-latin-ext-400-normal.3d8d457e5b04886f0311.woff",
     "static/media/ibm-plex-serif-latin-ext-400-normal.woff": "/static/media/ibm-plex-serif-latin-ext-400-normal.34eccc4a704034c029f7.woff",
     "static/media/ibm-plex-serif-cyrillic-400-normal.woff2": "/static/media/ibm-plex-serif-cyrillic-400-normal.bf1df6d54ea50357fd88.woff2",
@@ -32,11 +33,11 @@
     "static/media/ibm-plex-serif-vietnamese-400-normal.woff2": "/static/media/ibm-plex-serif-vietnamese-400-normal.c81e16ec671bf9297d81.woff2",
     "static/media/ibm-plex-serif-vietnamese-400-normal.woff": "/static/media/ibm-plex-serif-vietnamese-400-normal.dc02b662511ad675b68c.woff",
     "index.html": "/index.html",
-    "main.fc208080.css.map": "/static/css/main.fc208080.css.map",
-    "main.c8324912.js.map": "/static/js/main.c8324912.js.map"
+    "main.efdadc07.css.map": "/static/css/main.efdadc07.css.map",
+    "main.bba5da8a.js.map": "/static/js/main.bba5da8a.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc208080.css",
-    "static/js/main.c8324912.js"
+    "static/css/main.efdadc07.css",
+    "static/js/main.bba5da8a.js"
   ]
 }
