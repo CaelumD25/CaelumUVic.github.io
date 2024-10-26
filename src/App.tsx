@@ -1,4 +1,9 @@
-import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Navigate,
+  Route,
+  Routes,
+} from "react-router-dom";
 import Home from "./pages/Home.tsx";
 import Experience from "./pages/Experience.tsx";
 import Projects from "./pages/Projects.tsx";
@@ -10,7 +15,7 @@ import UnderConstruction from "./pages/UnderConstruction.tsx";
 function App() {
   console.log("App rendered");
   return (
-    <HashRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<UnderConstruction />} />
         <Route path="/home" element={<Home />} />
@@ -20,7 +25,7 @@ function App() {
         <Route path="/blog/1-name" element={<Blog src={""} />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-    </HashRouter>
+    </Router>
   );
 }
 
