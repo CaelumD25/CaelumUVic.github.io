@@ -142,9 +142,7 @@ function Home() {
                 "Picture representing this Website, photos sourced from Nord"
               }
               bodyText={
-                <MarkdownToHTML
-                  src={"public/content/projects/ProjectHousing.md"}
-                />
+                <MarkdownToHTML src={"content/projects/ProjectHousing.md"} />
               }
             />
           </Grid>
@@ -158,7 +156,7 @@ function Home() {
               }
               bodyText={
                 <MarkdownToHTML
-                  src={"public/content/experience/ExperienceITShort.md"}
+                  src={"content/experience/ExperienceITShort.md"}
                 />
               }
             />

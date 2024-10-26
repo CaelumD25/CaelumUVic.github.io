@@ -24,9 +24,7 @@ function Projects() {
               <Card
                 title={"This Website!"}
                 bodyText={
-                  <MarkdownToHTML
-                    src={"public/content/projects/ProjectWebsite.md"}
-                  />
+                  <MarkdownToHTML src={"content/projects/ProjectWebsite.md"} />
                 }
                 imgSource={website}
                 imgAlt={"Picture representing this website, assets from Nord"}
@@ -37,9 +35,7 @@ function Projects() {
               <Card
                 title={"AI Pacman"}
                 bodyText={
-                  <MarkdownToHTML
-                    src={"public/content/projects/ProjectPacman.md"}
-                  />
+                  <MarkdownToHTML src={"content/projects/ProjectPacman.md"} />
                 }
                 imgSource={pacman}
                 imgAlt={
@@ -52,9 +48,7 @@ function Projects() {
               <Card
                 title={"Rental Monitor"}
                 bodyText={
-                  <MarkdownToHTML
-                    src={"public/content/projects/ProjectHousing.md"}
-                  />
+                  <MarkdownToHTML src={"content/projects/ProjectHousing.md"} />
                 }
                 imgSource={housing}
                 imgAlt={"The picture used to represent the telegram bot"}
