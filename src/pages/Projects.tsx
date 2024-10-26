@@ -25,7 +25,7 @@ function Projects() {
                 title={"This Website!"}
                 bodyText={
                   <MarkdownToHTML
-                    src={"src/assets/content/projects/ProjectWebsite.md"}
+                    src={"public/content/projects/ProjectWebsite.md"}
                   />
                 }
                 imgSource={website}
@@ -38,7 +38,7 @@ function Projects() {
                 title={"AI Pacman"}
                 bodyText={
                   <MarkdownToHTML
-                    src={"src/assets/content/projects/ProjectPacman.md"}
+                    src={"public/content/projects/ProjectPacman.md"}
                   />
                 }
                 imgSource={pacman}
@@ -53,7 +53,7 @@ function Projects() {
                 title={"Rental Monitor"}
                 bodyText={
                   <MarkdownToHTML
-                    src={"src/assets/content/projects/ProjectHousing.md"}
+                    src={"public/content/projects/ProjectHousing.md"}
                   />
                 }
                 imgSource={housing}

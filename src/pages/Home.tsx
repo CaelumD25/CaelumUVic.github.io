@@ -143,7 +143,7 @@ function Home() {
               }
               bodyText={
                 <MarkdownToHTML
-                  src={"src/assets/content/projects/ProjectHousing.md"}
+                  src={"public/content/projects/ProjectHousing.md"}
                 />
               }
             />
@@ -158,7 +158,7 @@ function Home() {
               }
               bodyText={
                 <MarkdownToHTML
-                  src={"src/assets/content/experience/ExperienceITShort.md"}
+                  src={"public/content/experience/ExperienceITShort.md"}
                 />
               }
             />

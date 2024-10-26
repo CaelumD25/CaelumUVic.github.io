@@ -32,7 +32,7 @@ function Experience() {
               />
             </Grid>
             <Grid size={{ xs: 12, md: 9 }}>
-              <MarkdownToHTML src="src/assets/content/experience/ExperienceIT.md" />
+              <MarkdownToHTML src="public/content/experience/ExperienceIT.md" />
             </Grid>
           </Grid>
 
@@ -40,7 +40,7 @@ function Experience() {
 
           <Grid container spacing={3}>
             <Grid size={{ xs: 12, md: 9 }}>
-              <MarkdownToHTML src="src/assets/content/experience/ExperienceVolunteering.md" />
+              <MarkdownToHTML src="public/content/experience/ExperienceVolunteering.md" />
             </Grid>
             <Grid size={{ xs: 12, md: 3 }}>
               <Box
