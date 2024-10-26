@@ -1,4 +1,4 @@
-import { Container, Box } from "@mui/material";
+import { Container, Box, Typography } from "@mui/material";
 import Card from "../components/GeneralCard";
 import pacman from "../assets/images/portfolio_pacman.gif";
 import housing from "../assets/images/portfolio_housing.png";
@@ -13,12 +13,13 @@ function Projects() {
     <>
       <CustomNavbar />
       <Container>
+        <Typography variant={"h3"} component={"h1"}>
+          Projects
+        </Typography>
+        <hr />
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={3}>
-            <Grid size={{ xs: 12 }}>
-              <h1>Projects</h1>
-              <hr />
-            </Grid>
+            <Grid size={{ xs: 12 }}></Grid>
 
             <Grid sx={{ marginTop: 0 }} size={{ xs: 12, sm: 6, md: 4 }}>
               <Card

@@ -11,12 +11,11 @@ function Experience() {
     <Box>
       <CustomNavbar />
       <Container>
+        <Typography variant="h3" component="h1" gutterBottom>
+          Experience
+        </Typography>
+        <Divider sx={{ mb: 4 }} />
         <Box sx={{ py: 4 }}>
-          <Typography variant="h3" component="h1" gutterBottom>
-            Experience
-          </Typography>
-          <Divider sx={{ mb: 4 }} />
-
           <Grid container spacing={3}>
             <Grid size={{ xs: 12, md: 3 }}>
               <Box

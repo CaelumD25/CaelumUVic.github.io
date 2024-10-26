@@ -15,10 +15,10 @@ function Home() {
     <>
       <CustomNavbar />
       <Container className={"home"}>
-        <Box my={4}>
-          <Typography variant="h1">Home</Typography>
-          <hr />
-        </Box>
+        <Typography variant="h3" component="h1" gutterBottom>
+          Home
+        </Typography>
+        <hr />
         <Grid container spacing={2}>
           <Grid size={{ sm: 12, md: 8 }}>
             <MarkdownToHTML src={"content/Intro.md"} />

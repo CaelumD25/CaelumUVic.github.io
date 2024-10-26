@@ -1,11 +1,16 @@
 import CustomNavbar from "../components/CustomNavbar.tsx";
-import { Container } from "@mui/material";
+import { Container, Divider, Typography } from "@mui/material";
 
 function Blogs() {
   return (
     <>
       <CustomNavbar />
-      <Container></Container>
+      <Container>
+        <Typography variant="h3" component="h1" gutterBottom>
+          Blogs
+        </Typography>
+        <Divider sx={{ mb: 4 }} />
+      </Container>
     </>
   );
 }

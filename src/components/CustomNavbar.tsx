@@ -10,6 +10,7 @@ import { useTheme } from "@mui/material/styles";
 import { Box, Drawer, List, useMediaQuery } from "@mui/material";
 import { motion, TargetAndTransition, VariantLabels } from "framer-motion";
 import NavButton from "./NavButton.tsx";
+import Logo from "../assets/images/New_Profile_V2.svg";
 
 function CustomNavbar() {
   const animationFinal: VariantLabels | TargetAndTransition | undefined = {
@@ -38,7 +39,27 @@ function CustomNavbar() {
     >
       <Toolbar>
         <Link to={"/"} style={{ flexGrow: 1 }}>
-          <Typography variant="h2">Caelum Dudek</Typography>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              p: 1,
+              m: 1,
+              gap: 1,
+            }}
+          >
+            <Box
+              component="img"
+              src={Logo}
+              alt="Website Logo"
+              sx={{ height: "50px", width: "auto" }}
+              boxShadow={"none"}
+            />
+            <Typography variant="h2" sx={{ whiteSpace: "nowrap" }}>
+              Caelum Dudek
+            </Typography>
+          </Box>
         </Link>
 
         {isMobile ? (
@@ -52,7 +73,7 @@ function CustomNavbar() {
               <MenuIcon />
             </IconButton>
             <Drawer
-              sx={{ width: "40vw" }}
+              sx={{ width: "800px" }}
               open={menuOpen}
               onClose={() => toggleDrawer(false)}
             >
