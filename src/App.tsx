@@ -8,6 +8,7 @@ import Blog from "./pages/Blog.tsx";
 import UnderConstruction from "./pages/UnderConstruction.tsx";
 
 function App() {
+  console.log("App rendered");
   return (
     <HashRouter>
       <Routes>
