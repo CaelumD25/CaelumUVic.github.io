@@ -21,7 +21,7 @@ function Home() {
         </Box>
         <Grid container spacing={2}>
           <Grid size={{ sm: 12, md: 8 }}>
-            <MarkdownToHTML src={"src/assets/Intro.md"} />
+            <MarkdownToHTML src={"content/Intro.md"} />
             <Box>
               <Typography component="span">
                 <a
