@@ -1,5 +1,6 @@
 import {
   BrowserRouter as Router,
+  HashRouter,
   Navigate,
   Route,
   Routes,
@@ -14,7 +15,7 @@ import UnderConstruction from "./pages/UnderConstruction.tsx";
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <Routes>
         <Route path="/home" element={<UnderConstruction />} />
         <Route path="/home" element={<Home />} />
@@ -24,7 +25,7 @@ function App() {
         <Route path="/blog/1-name" element={<Blog src={""} />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 
