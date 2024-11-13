@@ -1,5 +1,6 @@
 import ReactMarkdown from "react-markdown";
 import { useEffect, useState } from "react";
+import { Typography, Box, List, ListItem } from "@mui/material";
 
 export interface Props {
   src: string;
@@ -40,14 +41,79 @@ const MarkdownToHTML = ({ src }: Props) => {
   }, [src]);
 
   if (error) {
-    return <div className="text-red-500">Error loading markdown: {error}</div>;
+    return (
+      <Typography color="error" variant="body1">
+        Error loading markdown: {error}
+      </Typography>
+    );
   }
 
   if (!markdown) {
-    return <div>Loading...</div>;
+    return <Typography variant="body1">Loading...</Typography>;
   }
 
-  return <ReactMarkdown>{markdown}</ReactMarkdown>;
+  return (
+    <Box component="div">
+      <ReactMarkdown
+        components={{
+          p: ({ children }) => (
+            <Typography variant="body1" paragraph>
+              {children}
+            </Typography>
+          ),
+          h1: ({ children }) => (
+            <Typography variant="h1" gutterBottom>
+              {children}
+            </Typography>
+          ),
+          h2: ({ children }) => (
+            <Typography variant="h2" gutterBottom>
+              {children}
+            </Typography>
+          ),
+          h3: ({ children }) => (
+            <Typography variant="h3" gutterBottom>
+              {children}
+            </Typography>
+          ),
+          h4: ({ children }) => (
+            <Typography variant="h4" gutterBottom>
+              {children}
+            </Typography>
+          ),
+          h5: ({ children }) => (
+            <Typography variant="h5" gutterBottom>
+              {children}
+            </Typography>
+          ),
+          h6: ({ children }) => (
+            <Typography variant="h6" gutterBottom>
+              {children}
+            </Typography>
+          ),
+          ul: ({ children }) => (
+            <List sx={{ listStyleType: "disc", pl: 4 }}>{children}</List>
+          ),
+          ol: ({ children }) => (
+            <List sx={{ listStyleType: "decimal", pl: 4 }}>{children}</List>
+          ),
+          li: ({ children }) => (
+            <ListItem
+              sx={{
+                display: "list-item",
+                pl: 0,
+                py: 0.5,
+              }}
+            >
+              <Typography variant="body1">{children}</Typography>
+            </ListItem>
+          ),
+        }}
+      >
+        {markdown}
+      </ReactMarkdown>
+    </Box>
+  );
 };
 
 export default MarkdownToHTML;

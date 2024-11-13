@@ -10,15 +10,13 @@ import Projects from "./pages/Projects.tsx";
 import "./index.css";
 import Blogs from "./pages/Blogs.tsx";
 import Blog from "./pages/Blog.tsx";
-import UnderConstruction from "./pages/UnderConstruction.tsx";
 
 function App() {
   console.log("App rendered");
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<UnderConstruction />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/blogs" element={<Blogs />} />

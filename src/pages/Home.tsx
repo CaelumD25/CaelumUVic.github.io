@@ -19,7 +19,7 @@ function Home() {
           Home
         </Typography>
         <hr />
-        <Grid container spacing={2}>
+        <Grid container spacing={2} sx={{ marginTop: "1em" }}>
           <Grid size={{ sm: 12, md: 8 }}>
             <MarkdownToHTML src={"content/Intro.md"} />
             <Box>
