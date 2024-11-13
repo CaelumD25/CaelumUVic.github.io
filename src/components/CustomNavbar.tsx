@@ -32,10 +32,12 @@ function CustomNavbar() {
     setMenuOpen(open);
   };
 
+  const backgroundColorValue = "#3b4252";
+
   return (
     <AppBar
       position="static"
-      sx={{ marginBottom: "1em", backgroundColor: "#3b4252" }}
+      sx={{ marginBottom: "1em", backgroundColor: backgroundColorValue }}
     >
       <Toolbar>
         <Link to={"/"} style={{ flexGrow: 1 }}>
@@ -56,7 +58,7 @@ function CustomNavbar() {
               sx={{ height: "50px", width: "auto" }}
               boxShadow={"none"}
             />
-            <Typography variant="h2" sx={{ whiteSpace: "nowrap" }}>
+            <Typography variant="h1" sx={{ whiteSpace: "nowrap" }}>
               Caelum Dudek
             </Typography>
           </Box>
@@ -75,7 +77,9 @@ function CustomNavbar() {
             <Drawer
               sx={{ width: "800px" }}
               open={menuOpen}
+              anchor="right"
               onClose={() => toggleDrawer(false)}
+              PaperProps={{ sx: { backgroundColor: backgroundColorValue } }}
             >
               <List>
                 <Link to={"/"} onClick={() => toggleDrawer(false)}>

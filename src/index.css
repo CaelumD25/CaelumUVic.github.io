@@ -15,8 +15,9 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
-    overflow-y: auto;
-    scrollbar-gutter: stable !important;
+    overflow-y: scroll;
+    scrollbar-gutter: stable;
+
 }
 
 h1, h2, h3, h4 {
@@ -234,7 +235,7 @@ div.card-container {
 
 /* Scroll bar */
 ::-webkit-scrollbar {
-    width: 60px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar {
