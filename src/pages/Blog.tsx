@@ -5,7 +5,7 @@ import { useState } from "react";
 export type props = {
   title: string;
   src: string;
-  initialExpanded: boolean | null | undefined;
+  initialExpanded?: boolean | null | undefined;
 };
 
 function Blog({ title, src, initialExpanded }: props) {
