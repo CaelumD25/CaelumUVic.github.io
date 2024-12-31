@@ -15,7 +15,7 @@ function Home() {
     <>
       <CustomNavbar />
       <Container className={"home"}>
-        <Typography variant="h2" gutterBottom>
+        <Typography variant="h1" gutterBottom>
           Home
         </Typography>
         <hr />

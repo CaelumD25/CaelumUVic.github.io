@@ -11,7 +11,7 @@ function Experience() {
     <Box>
       <CustomNavbar />
       <Container>
-        <Typography variant="h3" component="h1" gutterBottom>
+        <Typography variant="h1" gutterBottom>
           Experience
         </Typography>
         <Divider sx={{ mb: 4 }} />

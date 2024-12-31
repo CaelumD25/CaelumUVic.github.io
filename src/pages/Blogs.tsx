@@ -6,7 +6,7 @@ function Blogs() {
     <>
       <CustomNavbar />
       <Container>
-        <Typography variant="h3" component="h1" gutterBottom>
+        <Typography variant="h1" gutterBottom>
           Blogs
         </Typography>
         <Divider sx={{ mb: 4 }} />

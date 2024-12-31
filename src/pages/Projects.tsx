@@ -13,7 +13,7 @@ function Projects() {
     <>
       <CustomNavbar />
       <Container>
-        <Typography variant={"h3"} component={"h1"}>
+        <Typography variant={"h1"} gutterBottom>
           Projects
         </Typography>
         <hr />
