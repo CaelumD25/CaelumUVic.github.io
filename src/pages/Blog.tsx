@@ -5,10 +5,11 @@ import { useState } from "react";
 export type props = {
   title: string;
   src: string;
+  initialExpanded: boolean | null | undefined;
 };
 
-function Blog({ title, src }: props) {
-  const [expanded, setExpanded] = useState<boolean>();
+function Blog({ title, src, initialExpanded }: props) {
+  const [expanded, setExpanded] = useState<boolean>(initialExpanded ?? false);
   return (
     <Container
       onClick={() => setExpanded(!expanded)}
@@ -24,7 +25,7 @@ function Blog({ title, src }: props) {
       }}
     >
       <Typography variant="h3">{title}</Typography>
-      <MarkdownToHTML src={src} shortened={expanded} />
+      <MarkdownToHTML src={src} shortened={!expanded} />
     </Container>
   );
 }
