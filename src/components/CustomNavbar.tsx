@@ -58,7 +58,7 @@ function CustomNavbar() {
               sx={{ height: "50px", width: "auto" }}
               boxShadow={"none"}
             />
-            <Typography variant="h1" sx={{ whiteSpace: "nowrap" }}>
+            <Typography variant="subtitle1" sx={{ whiteSpace: "nowrap" }}>
               Caelum Dudek
             </Typography>
           </Box>
