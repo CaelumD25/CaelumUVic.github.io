@@ -28,8 +28,7 @@ const GeneralCard = ({ title, imgSource, imgAlt, bodyText }: GeneralCard) => {
         <Grid container spacing={2}>
           <Grid size={{ xs: 12 }}>
             <Typography
-              variant="h5"
-              component="h3"
+              variant="h3"
               gutterBottom
               sx={{
                 color: "#81A1C1",

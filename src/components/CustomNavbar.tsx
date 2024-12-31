@@ -47,7 +47,9 @@ function CustomNavbar() {
               flexDirection: "row",
               alignItems: "center",
               p: 1,
+              paddingLeft: 0,
               m: 1,
+              marginLeft: 0,
               gap: 1,
             }}
           >
@@ -58,9 +60,7 @@ function CustomNavbar() {
               sx={{ height: "50px", width: "auto" }}
               boxShadow={"none"}
             />
-            <Typography variant="subtitle1" sx={{ whiteSpace: "nowrap" }}>
-              Caelum Dudek
-            </Typography>
+            <Typography variant="subtitle1">Caelum Dudek</Typography>
           </Box>
         </Link>
 
