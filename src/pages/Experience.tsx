@@ -1,12 +1,21 @@
-import { Box, Container, Typography, Divider } from "@mui/material";
+import {
+  Box,
+  Container,
+  Typography,
+  Divider,
+  useMediaQuery,
+} from "@mui/material";
 import it from "../assets/images/experience_IT.png";
 import experience2 from "../assets/images/experience_2.png";
 import MarkdownToHTML from "../components/MarkdownToHTML.tsx";
 import CustomNavbar from "../components/CustomNavbar.tsx";
 import Background from "../components/Background.tsx";
 import Grid from "@mui/material/Grid2";
+import { useTheme } from "@mui/material/styles";
 
 function Experience() {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <Box>
       <CustomNavbar />
@@ -15,24 +24,41 @@ function Experience() {
           Experience
         </Typography>
         <Divider sx={{ mb: 4 }} />
-        <Box sx={{ py: 4 }}>
+        <Box>
           <Grid container spacing={3}>
-            <Grid size={{ xs: 12, md: 3 }}>
-              <Box
-                component="img"
-                src={it}
-                sx={{
-                  width: "100%",
-                  mb: 1.5,
-                  display: "block",
-                }}
-                alt="Picture of me at the RDKB"
-                title="Picture of me at the RDKB"
-              />
-            </Grid>
+            {isMobile ? null : (
+              <Grid size={{ xs: 12, md: 3 }}>
+                <Box
+                  component="img"
+                  src={it}
+                  sx={{
+                    width: "100%",
+                    mb: 1.5,
+                    display: "block",
+                  }}
+                  alt="Picture of me at the RDKB"
+                  title="Picture of me at the RDKB"
+                />
+              </Grid>
+            )}
             <Grid size={{ xs: 12, md: 9 }}>
               <MarkdownToHTML src="content/experience/ExperienceIT.md" />
             </Grid>
+            {isMobile ? (
+              <Grid size={{ xs: 12, md: 3 }}>
+                <Box
+                  component="img"
+                  src={it}
+                  sx={{
+                    width: "100%",
+                    mb: 1.5,
+                    display: "block",
+                  }}
+                  alt="Picture of me at the RDKB"
+                  title="Picture of me at the RDKB"
+                />
+              </Grid>
+            ) : null}
           </Grid>
 
           <Divider sx={{ my: 4 }} />

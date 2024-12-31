@@ -80,7 +80,7 @@ function Home() {
                 </a>
                 <a
                   className={"socials-link"}
-                  href={"https://www.instagram.com/_cmds25/"}
+                  href={"https://www.instagram.com/caelum_dudek/"}
                   target={"_blank"}
                   rel="noreferrer"
                   title={"Instagram"}
@@ -142,7 +142,7 @@ function Home() {
                 "Picture representing this Website, photos sourced from Nord"
               }
               bodyText={
-                <MarkdownToHTML src={"content/projects/ProjectHousing.md"} />
+                <MarkdownToHTML src={"content/projects/ProjectWebsite.md"} />
               }
             />
           </Grid>
