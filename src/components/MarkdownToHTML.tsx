@@ -4,9 +4,10 @@ import { Typography, Box, List, ListItem } from "@mui/material";
 
 export interface Props {
   src: string;
+  shortened?: boolean;
 }
 
-const MarkdownToHTML = ({ src }: Props) => {
+const MarkdownToHTML = ({ src, shortened }: Props) => {
   const [markdown, setMarkdown] = useState<string>();
   const [error, setError] = useState<string>();
 
@@ -51,6 +52,15 @@ const MarkdownToHTML = ({ src }: Props) => {
   if (!markdown) {
     return <Typography variant="body1">Loading...</Typography>;
   }
+
+  const getShortened = (markdownString: string): string => {
+    if (markdownString.length > 128) {
+      const firstParagraph = markdownString.split("\n")[0];
+      return firstParagraph.slice(0, 128) + "...";
+    } else {
+      return markdownString;
+    }
+  };
 
   return (
     <Box component="div">
@@ -110,7 +120,7 @@ const MarkdownToHTML = ({ src }: Props) => {
           ),
         }}
       >
-        {markdown}
+        {shortened ? getShortened(markdown) : markdown}
       </ReactMarkdown>
     </Box>
   );
