@@ -39,7 +39,8 @@ function Experience() {
                   mb: 1.5,
                   display: "block",
                 }}
-                alt="Picture of the Interior Health"
+                alt="Picture of the CanAssist and the people I worked with"
+                title="Dion Struwig, Dylan Stiles, Patrick Hartmann-Rourke, Caelum Dudek(Me), and Summer Johnson(Not Pictured)"
               />
             </Grid>
           </Grid>
