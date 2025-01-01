@@ -4,6 +4,7 @@ import pacman from "../assets/images/portfolio_pacman.gif";
 import housing from "../assets/images/portfolio_housing.png";
 import website from "../assets/images/portfolio_website.png";
 import canPlan from "../assets/images/portfolio_canplan.png";
+import tba from "../assets/images/portfolio_tbd.png";
 
 import MarkdownToHTML from "../components/MarkdownToHTML.tsx";
 import CustomNavbar from "../components/CustomNavbar.tsx";
@@ -21,6 +22,16 @@ function Projects() {
         <hr />
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={3}>
+            <Grid sx={{ marginTop: 0 }} size={{ xs: 12, sm: 6, md: 4 }}>
+              <Card
+                title={"TBA"}
+                bodyText={
+                  <MarkdownToHTML src={"content/projects/ProjectSocial.md"} />
+                }
+                imgSource={tba}
+                imgAlt={"Filler image for upcoming project"}
+              />
+            </Grid>
             <Grid sx={{ marginTop: 0 }} size={{ xs: 12, sm: 6, md: 4 }}>
               <Card
                 title={"CanPlan"}

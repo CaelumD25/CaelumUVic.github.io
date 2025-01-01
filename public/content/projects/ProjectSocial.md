@@ -1,0 +1,1 @@
+I'm currently working on a small project that is within the very early stages of development and ideation. I hope to release this project to the Android app store before my last semester of school.
