@@ -7,6 +7,7 @@ import {
 } from "@mui/material";
 import it from "../assets/images/experience_IT.png";
 import experience2 from "../assets/images/experience_2.png";
+import experienceCanAssist from "../assets/images/experience_canassist.png";
 import MarkdownToHTML from "../components/MarkdownToHTML.tsx";
 import CustomNavbar from "../components/CustomNavbar.tsx";
 import Background from "../components/Background.tsx";
@@ -25,6 +26,25 @@ function Experience() {
         </Typography>
         <Divider sx={{ mb: 4 }} />
         <Box>
+          <Grid container spacing={3}>
+            <Grid size={{ xs: 12, md: 9 }}>
+              <MarkdownToHTML src="content/experience/ExperienceCanAssist.md" />
+            </Grid>
+            <Grid size={{ xs: 12, md: 3 }}>
+              <Box
+                component="img"
+                src={experienceCanAssist}
+                sx={{
+                  width: "100%",
+                  mb: 1.5,
+                  display: "block",
+                }}
+                alt="Picture of the Interior Health"
+              />
+            </Grid>
+          </Grid>
+          <Divider sx={{ my: 4 }} />
+
           <Grid container spacing={3}>
             {isMobile ? null : (
               <Grid size={{ xs: 12, md: 3 }}>
