@@ -19,8 +19,8 @@ function Home() {
           Home
         </Typography>
         <hr />
-        <Grid container spacing={2} sx={{ marginTop: "1em" }}>
-          <Grid size={{ sm: 12, md: 8 }}>
+        <Grid container spacing={2} sx={{ marginVertical: "1rem" }}>
+          <Grid size={{ xs: 12, sm: 8 }} sx={{ marginTop: "1rem" }}>
             <MarkdownToHTML src={"content/Intro.md"} />
             <Box>
               <Typography component="span">
@@ -99,7 +99,7 @@ function Home() {
               </Typography>
             </Box>
           </Grid>
-          <Grid size={{ xs: 12, md: 4 }} style={{ marginBottom: "12px" }}>
+          <Grid size={{ xs: 8, sm: 4 }} sx={{ marginBottom: "1rem" }}>
             <Grid container spacing={2}>
               <Grid size={{ xs: 6 }}>
                 <img
@@ -109,7 +109,7 @@ function Home() {
                   style={{ width: "100%", height: "auto" }}
                 />
               </Grid>
-              <Grid size={{ sm: 6 }}>
+              <Grid size={{ xs: 6 }}>
                 <img
                   src={mental}
                   alt={
@@ -121,7 +121,7 @@ function Home() {
                   style={{ width: "100%", height: "auto" }}
                 />
               </Grid>
-              <Grid size={{ xs: 6 }}>
+              <Grid size={{ xs: 12 }}>
                 <img
                   src={cycling}
                   alt={"Cycling Photo, Photo by Nuno Ricardo on Unsplash"}
