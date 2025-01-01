@@ -3,6 +3,8 @@ import Card from "../components/GeneralCard";
 import pacman from "../assets/images/portfolio_pacman.gif";
 import housing from "../assets/images/portfolio_housing.png";
 import website from "../assets/images/portfolio_website.png";
+import canPlan from "../assets/images/portfolio_canplan.png";
+
 import MarkdownToHTML from "../components/MarkdownToHTML.tsx";
 import CustomNavbar from "../components/CustomNavbar.tsx";
 import Grid from "@mui/material/Grid2";
@@ -19,6 +21,16 @@ function Projects() {
         <hr />
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={3}>
+            <Grid sx={{ marginTop: 0 }} size={{ xs: 12, sm: 6, md: 4 }}>
+              <Card
+                title={"CanPlan"}
+                bodyText={
+                  <MarkdownToHTML src={"content/projects/ProjectCanPlan.md"} />
+                }
+                imgSource={canPlan}
+                imgAlt={"Filler image for CanPlan"}
+              />
+            </Grid>
             <Grid sx={{ marginTop: 0 }} size={{ xs: 12, sm: 6, md: 4 }}>
               <Card
                 title={"This Website!"}
