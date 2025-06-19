@@ -6,7 +6,7 @@ function Background() {
       opacity: 1,
       transition: {
         type: "linear",
-        delay: 0.2 * i,
+        delay: 0.25 * i,
         duration: 2,
       },
     }),
