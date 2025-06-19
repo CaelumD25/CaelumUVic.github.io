@@ -4,7 +4,7 @@ import pacman from "../assets/images/portfolio_pacman.gif";
 import housing from "../assets/images/portfolio_housing.png";
 import website from "../assets/images/portfolio_website.png";
 import canPlan from "../assets/images/portfolio_canplan.png";
-import tba from "../assets/images/portfolio_tbd.png";
+import propinquity from "../assets/images/portfolio-propinquity.png"
 
 import MarkdownToHTML from "../components/MarkdownToHTML.tsx";
 import CustomNavbar from "../components/CustomNavbar.tsx";
@@ -24,12 +24,12 @@ function Projects() {
           <Grid container spacing={3}>
             <Grid sx={{ marginTop: 0 }} size={{ xs: 12, sm: 6, md: 4 }}>
               <Card
-                title={"TBA"}
+                title={"Propinquity"}
                 bodyText={
-                  <MarkdownToHTML src={"content/projects/ProjectSocial.md"} />
+                  <MarkdownToHTML src={"content/projects/ProjectPropinquity.md"} />
                 }
-                imgSource={tba}
-                imgAlt={"Filler image for upcoming project"}
+                imgSource={propinquity}
+                imgAlt={"Propinquity Logo"}
               />
             </Grid>
             <Grid sx={{ marginTop: 0 }} size={{ xs: 12, sm: 6, md: 4 }}>
