@@ -1,8 +1,5 @@
 import Card from "../components/GeneralCard";
 import MarkdownToHTML from "../components/MarkdownToHTML.tsx";
-import bouldering from "../assets/images/bouldering.png";
-import mental from "../assets/images/mental.png";
-import cycling from "../assets/images/cycling.png";
 import website from "../assets/images/portfolio_website.png";
 import it from "../assets/images/experience_IT.png";
 import CustomNavbar from "../components/CustomNavbar.tsx";
@@ -10,7 +7,20 @@ import { Container, Box, Typography } from "@mui/material";
 import Background from "../components/Background.tsx";
 import Grid from "@mui/material/Grid2";
 
+import Lottie from "react-lottie";
+import animationData from "../assets/animations/rock-climb.json";
+
 function Home() {
+  const defaultOptions = {
+      loop: true,
+      autoplay: true,
+      animationData: animationData,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice"
+      }
+    };
+
+
   return (
     <>
       <CustomNavbar />
@@ -22,6 +32,7 @@ function Home() {
         <Grid container spacing={2} sx={{ marginVertical: "1rem" }}>
           <Grid size={{ xs: 12, sm: 8 }} sx={{ marginTop: "1rem" }}>
             <MarkdownToHTML src={"content/Intro.md"} />
+
             <Box>
               <Typography component="span">
                 <a
@@ -101,34 +112,11 @@ function Home() {
           </Grid>
           <Grid size={{ xs: 8, sm: 4 }} sx={{ marginBottom: "1rem" }}>
             <Grid container spacing={2}>
-              <Grid size={{ xs: 6 }}>
-                <img
-                  src={bouldering}
-                  alt={"Bouldering Photo"}
-                  title={"Bouldering Photo"}
-                  style={{ width: "100%", height: "auto" }}
-                />
-              </Grid>
-              <Grid size={{ xs: 6 }}>
-                <img
-                  src={mental}
-                  alt={
-                    "Coding Photo, Cycling Photo, Photo by Nuno Ricardo on Unsplash"
-                  }
-                  title={
-                    "Coding Photo, Cycling Photo, Photo by Nuno Ricardo on Unsplash"
-                  }
-                  style={{ width: "100%", height: "auto" }}
-                />
-              </Grid>
-              <Grid size={{ xs: 12 }}>
-                <img
-                  src={cycling}
-                  alt={"Cycling Photo, Photo by Nuno Ricardo on Unsplash"}
-                  title={"Cycling Photo, Photo by Nuno Ricardo on Unsplash"}
-                  style={{ width: "100%", height: "auto" }}
-                />
-              </Grid>
+              <Lottie
+	    options={defaultOptions}
+        height={400}
+        width={400}
+      />
             </Grid>
           </Grid>
         </Grid>
