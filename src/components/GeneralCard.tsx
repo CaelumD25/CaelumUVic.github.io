@@ -13,7 +13,7 @@ export interface GeneralCard {
 
 const GeneralCard = ({title, imgSource, imgAlt, bodyText, fadeInLeft}: GeneralCard) => {
   return (
-    <motion.div initial={{opacity: 0, x: fadeInLeft ? -40 : 40}} transition={{duration: 2, delay: Math.random() / 2}}
+    <motion.div initial={{opacity: 0, x: fadeInLeft ? -40 : 40}} transition={{duration: 2, delay: Math.random() / 4}}
                 whileInView={{opacity: 1, x: 0}}><Card
       sx={{
         bgcolor: "rgba(0,0,0,0.02)",
