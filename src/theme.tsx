@@ -1,4 +1,4 @@
-import { createTheme } from "@mui/material";
+import {createTheme} from "@mui/material";
 import IBMPlexSans from "./fonts/IBMPlexSans-Regular.woff2";
 
 const customTheme = createTheme({
@@ -25,7 +25,7 @@ const customTheme = createTheme({
       //textWrap: "nowrap",
     },
     body1: {
-      fontSize: "1rem",
+      fontSize: "18px",
       color: "#ECEFF4",
     },
   },

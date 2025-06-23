@@ -290,14 +290,6 @@ div.card-container {
     .mobile-hide {
         display: none;
     }
-
-    .background-svg-toggle-big {
-        display: none;
-    }
-
-    .background-svg-toggle-small {
-        display: block;
-    }
 }
 
 /* Small Devices */
@@ -313,14 +305,6 @@ div.card-container {
         display: none;
     }
 
-    .background-svg-toggle-big {
-        display: block;
-    }
-
-    .background-svg-toggle-small {
-        display: none;
-    }
-
     .card-container {
         margin-left: 0;
         margin-right: 0;
@@ -328,8 +312,12 @@ div.card-container {
 }
 
 .home-banner {
-    background-color: #3B425266;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    background-color: #3B425288;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
     margin: 0;
+}
+
+.blogs-page, .experience-page, .projects-page {
+    padding-top: 20px;
 }

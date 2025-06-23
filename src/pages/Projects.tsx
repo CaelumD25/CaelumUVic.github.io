@@ -1,4 +1,4 @@
-import { Container, Box, Typography } from "@mui/material";
+import {Container, Box, Typography} from "@mui/material";
 import Card from "../components/GeneralCard";
 import pacman from "../assets/images/portfolio_pacman.gif";
 import housing from "../assets/images/portfolio_housing.png";
@@ -14,50 +14,50 @@ import Background from "../components/Background.tsx";
 function Projects() {
   return (
     <>
-      <CustomNavbar />
-      <Container>
+      <CustomNavbar/>
+      <Container className={"projects-page"}>
         <Typography variant={"h1"} gutterBottom>
           Projects
         </Typography>
-        <hr />
-        <Box sx={{ flexGrow: 1 }}>
+        <hr/>
+        <Box sx={{flexGrow: 1}}>
           <Grid container spacing={3}>
-            <Grid sx={{ marginTop: 0 }} size={{ xs: 12, sm: 6, md: 4 }}>
+            <Grid sx={{marginTop: 0}} size={{xs: 12, sm: 6, md: 4}}>
               <Card
                 title={"Propinquity"}
                 bodyText={
-                  <MarkdownToHTML src={"content/projects/ProjectPropinquity.md"} />
+                  <MarkdownToHTML src={"content/projects/ProjectPropinquity.md"}/>
                 }
                 imgSource={propinquity}
                 imgAlt={"Propinquity Logo"}
               />
             </Grid>
-            <Grid sx={{ marginTop: 0 }} size={{ xs: 12, sm: 6, md: 4 }}>
+            <Grid sx={{marginTop: 0}} size={{xs: 12, sm: 6, md: 4}}>
               <Card
                 title={"CanPlan"}
                 bodyText={
-                  <MarkdownToHTML src={"content/projects/ProjectCanPlan.md"} />
+                  <MarkdownToHTML src={"content/projects/ProjectCanPlan.md"}/>
                 }
                 imgSource={canPlan}
                 imgAlt={"Filler image for CanPlan"}
               />
             </Grid>
-            <Grid sx={{ marginTop: 0 }} size={{ xs: 12, sm: 6, md: 4 }}>
+            <Grid sx={{marginTop: 0}} size={{xs: 12, sm: 6, md: 4}}>
               <Card
                 title={"This Website!"}
                 bodyText={
-                  <MarkdownToHTML src={"content/projects/ProjectWebsite.md"} />
+                  <MarkdownToHTML src={"content/projects/ProjectWebsite.md"}/>
                 }
                 imgSource={website}
                 imgAlt={"Picture representing this website, assets from Nord"}
               />
             </Grid>
 
-            <Grid size={{ xs: 12, sm: 6, md: 4 }}>
+            <Grid size={{xs: 12, sm: 6, md: 4}}>
               <Card
                 title={"AI Pacman"}
                 bodyText={
-                  <MarkdownToHTML src={"content/projects/ProjectPacman.md"} />
+                  <MarkdownToHTML src={"content/projects/ProjectPacman.md"}/>
                 }
                 imgSource={pacman}
                 imgAlt={
@@ -66,11 +66,11 @@ function Projects() {
               />
             </Grid>
 
-            <Grid size={{ xs: 12, sm: 6, md: 4 }}>
+            <Grid size={{xs: 12, sm: 6, md: 4}}>
               <Card
                 title={"Rental Monitor"}
                 bodyText={
-                  <MarkdownToHTML src={"content/projects/ProjectHousing.md"} />
+                  <MarkdownToHTML src={"content/projects/ProjectHousing.md"}/>
                 }
                 imgSource={housing}
                 imgAlt={"The picture used to represent the telegram bot"}
@@ -79,7 +79,7 @@ function Projects() {
           </Grid>
         </Box>
       </Container>
-      <Background />
+      <Background/>
     </>
   );
 }

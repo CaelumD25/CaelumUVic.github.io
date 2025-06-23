@@ -42,32 +42,26 @@ function TitleBody({children}: ChildProps) {
 
 function Home() {
   const defaultOptions = {
-    loop: false,
+    loop: true,
     autoplay: true,
     animationData: animationData,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice"
     }
   };
-//<MarkdownToHTML src={"content/Intro.md"}/>
-// <Lottie
-//                 style={{zIndex: "0"}}
-//                 options={defaultOptions}
-//                 height={400}
-//                 width={400}
-//               />
+
   return (
     <>
       <CustomNavbar/>
       <Box className={"home-banner"}>
         <Container>
           <Title>Caelum Dudek</Title>
-          <TitleBody>Software Engineer</TitleBody>
+          <TitleBody>Software Engineering Graduate</TitleBody>
 
         </Container>
       </Box>
 
-      <Container className={"home"}>
+      <Container className={"home-page"}>
         <Grid container spacing={2} sx={{marginVertical: "1rem"}}>
           <Grid size={{xs: 12, sm: 8}} sx={{marginTop: "1rem"}}>
             <Box>
@@ -164,13 +158,18 @@ function Home() {
             </Box>
           </Grid>
         </Grid>
-        <Grid container spacing={2}>
+        <Grid container spacing={2} justifyContent="flex-end">
           <Grid size={{xs: 12, sm: 8}}><MarkdownToHTML src={"content/Intro.md"}/></Grid>
-          <Grid size={{xs: 12, sm: 4}}><Lottie options={defaultOptions} width={"100%"}/></Grid>
+          <Grid size={{xs: 6, sm: 4}}>
+            <motion.div initial={{opacity: 0, x: 20}} whileInView={{opacity: 1, x: 0}} transition={{duration: 1}}>
+              <Lottie options={defaultOptions}
+                      width={"100%"}/>
+            </motion.div>
+          </Grid>
 
         </Grid>
 
-        <Grid container spacing={2}>
+        <Grid container spacing={2} marginTop={4}>
           <Grid size={{xs: 12, md: 6}}>
             <Typography variant="h2">Featured Project</Typography>
             <Card
