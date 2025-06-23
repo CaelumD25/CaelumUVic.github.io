@@ -1,14 +1,14 @@
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
-import { useState } from "react";
-import { useTheme } from "@mui/material/styles";
-import { Box, Drawer, List, useMediaQuery } from "@mui/material";
-import { motion, TargetAndTransition, VariantLabels } from "framer-motion";
+import {useState} from "react";
+import {useTheme} from "@mui/material/styles";
+import {Box, Drawer, List, useMediaQuery} from "@mui/material";
+import {motion, TargetAndTransition, VariantLabels} from "framer-motion";
 import NavButton from "./NavButton.tsx";
 import Logo from "../assets/images/New_Profile_V2.svg";
 
@@ -19,8 +19,8 @@ function CustomNavbar() {
 
   const theme = useTheme();
 
-  const animationInitial = { scale: 1 };
-  const animationTransition = { duration: 0.3 };
+  const animationInitial = {scale: 1};
+  const animationTransition = {duration: 0.3};
 
   //const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
@@ -32,15 +32,17 @@ function CustomNavbar() {
     setMenuOpen(open);
   };
 
+  const blogsWIP = "none";
+
   const backgroundColorValue = "#3b4252";
 
   return (
     <AppBar
       position="static"
-      sx={{ marginBottom: "0", backgroundColor: backgroundColorValue }}
+      sx={{marginBottom: "0", backgroundColor: backgroundColorValue}}
     >
       <Toolbar>
-        <Link to={"/"} style={{ flexGrow: 1 }}>
+        <Link to={"/"} style={{flexGrow: 1}}>
           <Box
             sx={{
               display: "flex",
@@ -57,7 +59,7 @@ function CustomNavbar() {
               component="img"
               src={Logo}
               alt="Website Logo"
-              sx={{ height: "50px", width: "auto" }}
+              sx={{height: "50px", width: "auto"}}
               boxShadow={"none"}
             />
             <Typography variant="subtitle1">Caelum Dudek</Typography>
@@ -72,14 +74,14 @@ function CustomNavbar() {
               aria-label="menu"
               onClick={() => toggleDrawer(true)}
             >
-              <MenuIcon />
+              <MenuIcon/>
             </IconButton>
             <Drawer
-              sx={{ width: "800px" }}
+              sx={{width: "800px"}}
               open={menuOpen}
               anchor="right"
               onClose={() => toggleDrawer(false)}
-              PaperProps={{ sx: { backgroundColor: backgroundColorValue } }}
+              PaperProps={{sx: {backgroundColor: backgroundColorValue}}}
             >
               <List>
                 <Link to={"/"} onClick={() => toggleDrawer(false)}>
@@ -89,7 +91,7 @@ function CustomNavbar() {
                     whileHover={animationFinal}
                     transition={animationTransition}
                   >
-                    <NavButton buttonText={"Home"} />
+                    <NavButton buttonText={"Home"}/>
                   </motion.p>
                 </Link>
                 <Link to={"/projects"} onClick={() => toggleDrawer(false)}>
@@ -99,7 +101,7 @@ function CustomNavbar() {
                     whileHover={animationFinal}
                     transition={animationTransition}
                   >
-                    <NavButton buttonText={"Projects"} />
+                    <NavButton buttonText={"Projects"}/>
                   </motion.p>
                 </Link>
                 <Link to={"/experience"} onClick={() => toggleDrawer(false)}>
@@ -109,17 +111,17 @@ function CustomNavbar() {
                     whileHover={animationFinal}
                     transition={animationTransition}
                   >
-                    <NavButton buttonText={"Experience"} />
+                    <NavButton buttonText={"Experience"}/>
                   </motion.p>
                 </Link>
-                <Link to={"/blogs"} onClick={() => toggleDrawer(false)}>
+                <Link style={{display: blogsWIP}} to={"/blogs"} onClick={() => toggleDrawer(false)}>
                   <motion.p
                     className={"growing-hover"}
                     initial={animationInitial}
                     whileHover={animationFinal}
                     transition={animationTransition}
                   >
-                    <NavButton buttonText={"Blogs"} />
+                    <NavButton buttonText={"Blogs"}/>
                   </motion.p>
                 </Link>
               </List>
@@ -135,7 +137,7 @@ function CustomNavbar() {
                 transition={animationTransition}
                 whileTap={animationFinal}
               >
-                <NavButton buttonText={"Home"} />
+                <NavButton buttonText={"Home"}/>
               </motion.p>
             </Link>
             <Link to={"/projects"}>
@@ -146,7 +148,7 @@ function CustomNavbar() {
                 transition={animationTransition}
                 whileTap={animationFinal}
               >
-                <NavButton buttonText={"Projects"} />
+                <NavButton buttonText={"Projects"}/>
               </motion.p>
             </Link>
             <Link to={"/experience"}>
@@ -157,10 +159,10 @@ function CustomNavbar() {
                 transition={animationTransition}
                 whileTap={animationFinal}
               >
-                <NavButton buttonText={"Experience"} />
+                <NavButton buttonText={"Experience"}/>
               </motion.p>
             </Link>
-            <Link to={"/blogs"}>
+            <Link style={{display: blogsWIP}} to={"/blogs"}>
               <motion.p
                 className={"growing-hover"}
                 initial={animationInitial}
@@ -168,7 +170,7 @@ function CustomNavbar() {
                 transition={animationTransition}
                 whileTap={animationFinal}
               >
-                <NavButton buttonText={"Blogs"} />
+                <NavButton buttonText={"Blogs"}/>
               </motion.p>
             </Link>
           </>
