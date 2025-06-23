@@ -7,7 +7,7 @@ function Blogs() {
   return (
     <>
       <CustomNavbar/>
-      <Container className={"blogs-page"}>
+      <Container className={"blogs-page"} sx={{overflowX: "hidden"}}>
         <Typography variant="h1" gutterBottom>
           Blogs
         </Typography>

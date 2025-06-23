@@ -15,7 +15,7 @@ function Projects() {
   return (
     <>
       <CustomNavbar/>
-      <Container className={"projects-page"}>
+      <Container className={"projects-page"} sx={{overflowX: "hidden"}}>
         <Typography variant={"h1"} gutterBottom>
           Projects
         </Typography>

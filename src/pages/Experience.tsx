@@ -20,7 +20,7 @@ function Experience() {
   return (
     <Box>
       <CustomNavbar/>
-      <Container className={"experience-page"}>
+      <Container className={"experience-page"} sx={{overflowX: "hidden"}}>
         <Typography variant="h1" gutterBottom>
           Experience
         </Typography>
