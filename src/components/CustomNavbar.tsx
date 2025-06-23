@@ -37,7 +37,7 @@ function CustomNavbar() {
   return (
     <AppBar
       position="static"
-      sx={{ marginBottom: "1em", backgroundColor: backgroundColorValue }}
+      sx={{ marginBottom: "0", backgroundColor: backgroundColorValue }}
     >
       <Toolbar>
         <Link to={"/"} style={{ flexGrow: 1 }}>
