@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 import {useEffect, useState} from "react";
 
 function Background() {
@@ -18,15 +18,21 @@ function Background() {
 
   useEffect(() => {
     function handleResize() {
-      const { innerWidth: width} = window;
-      setViewBox(`0 0 ${100*(width/1920)} 20`);
+      const {innerWidth: width} = window;
+      if (width < 728) {
+        console.log("SMALLLL")
+        setViewBox(`0 0 40 20`);
+      } else {
+        setViewBox(`0 0 100 20`);
+      }
+
     }
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const [viewBox, setViewBox] = useState<string>(`0 0 ${100*(window.innerWidth/2000)} 20`)
+  const [viewBox, setViewBox] = useState<string>(`0 0 ${window.innerWidth < 728 ? 40 : 100} 20`)
 
   return (
     <footer className={"background-layer"}>
@@ -37,6 +43,7 @@ function Background() {
         height="100%"
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
+        preserveAspectRatio="none"
       >
         <motion.path
           custom={6}
