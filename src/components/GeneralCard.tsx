@@ -1,17 +1,20 @@
-import { ReactNode } from "react";
-import { Card, CardContent, Divider, Typography, Box } from "@mui/material";
+import {ReactNode} from "react";
+import {Card, CardContent, Divider, Typography, Box} from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import {motion} from "framer-motion";
 
 export interface GeneralCard {
   title: string;
   imgSource: string;
   imgAlt: string;
   bodyText: string | ReactNode;
+  fadeInLeft?: boolean;
 }
 
-const GeneralCard = ({ title, imgSource, imgAlt, bodyText }: GeneralCard) => {
+const GeneralCard = ({title, imgSource, imgAlt, bodyText, fadeInLeft}: GeneralCard) => {
   return (
-    <Card
+    <motion.div initial={{opacity: 0, x: fadeInLeft ? -40 : 40}} transition={{duration: 2, delay: Math.random() / 4}}
+                whileInView={{opacity: 1, x: 0}}><Card
       sx={{
         bgcolor: "rgba(0,0,0,0.02)",
         borderRadius: "1em",
@@ -26,7 +29,7 @@ const GeneralCard = ({ title, imgSource, imgAlt, bodyText }: GeneralCard) => {
     >
       <CardContent>
         <Grid container spacing={2}>
-          <Grid size={{ xs: 12 }}>
+          <Grid size={{xs: 12}}>
             <Typography
               variant="h3"
               gutterBottom
@@ -48,7 +51,7 @@ const GeneralCard = ({ title, imgSource, imgAlt, bodyText }: GeneralCard) => {
             />
           </Grid>
 
-          <Grid size={{ xs: 12 }}>
+          <Grid size={{xs: 12}}>
             <Typography
               component="div"
               sx={{
@@ -60,7 +63,7 @@ const GeneralCard = ({ title, imgSource, imgAlt, bodyText }: GeneralCard) => {
             </Typography>
           </Grid>
 
-          <Grid size={{ xs: 12 }}>
+          <Grid size={{xs: 12}}>
             <Divider
               sx={{
                 height: "2px",
@@ -86,6 +89,7 @@ const GeneralCard = ({ title, imgSource, imgAlt, bodyText }: GeneralCard) => {
         </Grid>
       </CardContent>
     </Card>
+    </motion.div>
   );
 };
 

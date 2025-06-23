@@ -17,6 +17,7 @@ body {
     min-height: 100vh;
     overflow-y: scroll;
     scrollbar-gutter: stable;
+    font-size: 15px;
 
 }
 
@@ -82,7 +83,9 @@ button.secondary-button {
 
 }
 
-.clear { clear:both; }
+.clear {
+    clear: both;
+}
 
 /* Main */
 
@@ -91,7 +94,7 @@ button.secondary-button {
 }
 
 
-.gutters{
+.gutters {
     margin: 20px 6%;
 }
 
@@ -126,6 +129,7 @@ img {
     fill: #A3BE8C;
     margin-right: 12px;
 }
+
 .socials-img:hover {
     fill: #EBCB8B;
 }
@@ -141,15 +145,15 @@ img {
 
 /* Nav */
 
-header{
-    overflow:hidden;
-    background-color:#3B4252;
+header {
+    overflow: hidden;
+    background-color: #3B4252;
     box-shadow: 0 1px 12px 1px #00000033;
     height: 80px;
 }
 
 nav {
-    margin-right:4%;
+    margin-right: 4%;
 }
 
 nav ul {
@@ -179,7 +183,7 @@ li {
     font-size: 1.1em;
 }
 
-nav li:first-child{
+nav li:first-child {
     margin-right: auto;
     padding: 40px 40px;
     /* First Child stylesheets here*/
@@ -230,7 +234,7 @@ div.card-container {
     margin: 1em 1em 1em 0;
     box-shadow: 10px 0 20px #00000033;
     border: 10px black;
-    background-color: rgba(0,0,0,0.02);
+    background-color: rgba(0, 0, 0, 0.02);
 }
 
 /* Scroll bar */
@@ -259,9 +263,9 @@ div.card-container {
 }
 
 
-#website-title{
+#website-title {
     text-transform: uppercase;
-    float:left;
+    float: left;
     padding: 1rem;
     margin-left: 4%;
     font-weight: lighter;
@@ -271,42 +275,49 @@ div.card-container {
 }
 
 
+.subtitle {
+    display: block;
+    font-size: 2em;
+    text-align: center;
+    z-index: 1000000000;
+}
+
+
 /* Media */
 
 /* Tablets */
-@media(max-width: 834px){
+@media (max-width: 834px) {
     .mobile-hide {
         display: none;
-    }
-    .background-svg-toggle-big {
-        display: none;
-    }
-    .background-svg-toggle-small {
-        display: block;
     }
 }
 
 /* Small Devices */
-@media(max-width: 500px){
+@media (max-width: 500px) {
     .responsive-nav {
         width: 100%;
     }
 }
 
 /* Desktop */
-@media(min-width: 835px) {
+@media (min-width: 835px) {
     .hamburger {
         display: none;
     }
-    .background-svg-toggle-big {
-        display: block;
-    }
-    .background-svg-toggle-small {
-        display: none;
-    }
+
     .card-container {
         margin-left: 0;
         margin-right: 0;
     }
 }
 
+.home-banner {
+    background-color: #3B425288;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    margin: 0;
+}
+
+.blogs-page, .experience-page, .projects-page {
+    padding-top: 20px;
+}

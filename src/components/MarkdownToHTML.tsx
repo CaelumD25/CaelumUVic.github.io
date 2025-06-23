@@ -1,13 +1,13 @@
 import ReactMarkdown from "react-markdown";
-import { useEffect, useState } from "react";
-import { Typography, Box, List, ListItem } from "@mui/material";
+import {useEffect, useState} from "react";
+import {Typography, Box, List, ListItem} from "@mui/material";
 
 export interface Props {
   src: string;
   shortened?: boolean;
 }
 
-const MarkdownToHTML = ({ src, shortened }: Props) => {
+const MarkdownToHTML = ({src, shortened}: Props) => {
   const [markdown, setMarkdown] = useState<string>();
   const [error, setError] = useState<string>();
 
@@ -26,7 +26,6 @@ const MarkdownToHTML = ({ src, shortened }: Props) => {
         }
 
         const text = await response.text();
-        console.log("Markdown content loaded:", text.substring(0, 100) + "..."); // Log first 100 chars
         setMarkdown(text);
         setError(undefined);
       } catch (e) {
@@ -66,48 +65,48 @@ const MarkdownToHTML = ({ src, shortened }: Props) => {
     <Box component="div">
       <ReactMarkdown
         components={{
-          p: ({ children }) => (
+          p: ({children}) => (
             <Typography variant="body1" paragraph>
               {children}
             </Typography>
           ),
-          h1: ({ children }) => (
+          h1: ({children}) => (
             <Typography variant="h1" gutterBottom>
               {children}
             </Typography>
           ),
-          h2: ({ children }) => (
+          h2: ({children}) => (
             <Typography variant="h2" gutterBottom>
               {children}
             </Typography>
           ),
-          h3: ({ children }) => (
+          h3: ({children}) => (
             <Typography variant="h3" gutterBottom>
               {children}
             </Typography>
           ),
-          h4: ({ children }) => (
+          h4: ({children}) => (
             <Typography variant="h4" gutterBottom>
               {children}
             </Typography>
           ),
-          h5: ({ children }) => (
+          h5: ({children}) => (
             <Typography variant="h5" gutterBottom>
               {children}
             </Typography>
           ),
-          h6: ({ children }) => (
+          h6: ({children}) => (
             <Typography variant="h6" gutterBottom>
               {children}
             </Typography>
           ),
-          ul: ({ children }) => (
-            <List sx={{ listStyleType: "disc", pl: 4 }}>{children}</List>
+          ul: ({children}) => (
+            <List sx={{listStyleType: "disc", pl: 4}}>{children}</List>
           ),
-          ol: ({ children }) => (
-            <List sx={{ listStyleType: "decimal", pl: 4 }}>{children}</List>
+          ol: ({children}) => (
+            <List sx={{listStyleType: "decimal", pl: 4}}>{children}</List>
           ),
-          li: ({ children }) => (
+          li: ({children}) => (
             <ListItem
               sx={{
                 display: "list-item",
