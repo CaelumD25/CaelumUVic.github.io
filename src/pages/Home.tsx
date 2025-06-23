@@ -61,8 +61,8 @@ function Home() {
         </Container>
       </Box>
 
-      <Container className={"home-page"}>
-        <Grid container sx={{marginTop: "10px"}}>
+      <Container className={"home-page"} sx={{overflowX: "hidden"}}>
+        <Grid container sx={{marginTop: "10px"}} justifyContent="flex-end">
           <Grid size={{xs: 12, sm: 8}}>
             <Grid container spacing={2} sx={{marginVertical: "1rem"}}>
 
@@ -160,12 +160,12 @@ function Home() {
               </Box>
 
             </Grid>
-            <Grid container spacing={2} justifyContent="flex-end">
+            <Grid container spacing={2}>
               <MarkdownToHTML src={"content/Intro.md"}/>
             </Grid>
           </Grid>
-          <Grid size={{xs: 12, sm: 4}}>
-            <motion.div initial={{opacity: 0, x: 20}} whileInView={{opacity: 1, x: 0}} transition={{duration: 1}}>
+          <Grid size={{xs: 8, sm: 4}}>
+            <motion.div initial={{opacity: 0, x: -20}} whileInView={{opacity: 1, x: 0}} transition={{duration: 1}}>
               <Lottie options={defaultOptions}
                       width={"100%"}/>
             </motion.div>
