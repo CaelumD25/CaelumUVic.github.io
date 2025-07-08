@@ -4,7 +4,7 @@ import pacman from "../assets/images/portfolio_pacman.gif";
 import housing from "../assets/images/portfolio_housing.png";
 import website from "../assets/images/portfolio_website.png";
 import canPlan from "../assets/images/portfolio_canplan.png";
-import propinquity from "../assets/images/portfolio-propinquity.png"
+import propinquity from "../assets/images/portfolio_propinquity.png"
 
 import MarkdownToHTML from "../components/MarkdownToHTML.tsx";
 import CustomNavbar from "../components/CustomNavbar.tsx";
