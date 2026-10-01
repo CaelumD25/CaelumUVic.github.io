@@ -1,13 +1,7 @@
 Hi, my name is Caelum, and welcome to my website!
 
+On this website, I wanted to display some of the projects I've worked on and the experiences I've accrued over the years while sharing a little about myself.
 
+I recently graduated with a Bachelor of Software Engineering from the University of Victoria, and I'm now working as a Software Developer there. School taught me the value of a good work-life balance, and even outside of work, I do my best to stay active and present. When I'm not at my desk, you'll probably find me bouldering, out on my bike, buried in a good book, or just spending time with friends.
 
-On this website, I wanted to display some of the projects I’ve worked on and the experiences I’ve accrued over the years while sharing a little about myself.
-
-
-
-I’m in my final year of my Bachelor of Software Engineering at the University of Victoria, and doing my best to have a productive and healthy work-life balance. School can be all-consuming at times, but when I’m not spending 10 consecutive hours on some final project, I like to consistently get out and revel in some of my favourite hobbies. Some of those hobbies include bouldering, cycling, reading, or just spending time with friends!
-
-
-
-Hopefully, you like the website, and if you’re more curious about some of the design decisions, I’ve included more in the projects section!
+Hopefully you like the website, and if you're curious about any of the design decisions, I've written more about it in the projects section!
