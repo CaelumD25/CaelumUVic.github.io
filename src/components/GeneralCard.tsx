@@ -8,7 +8,6 @@ export interface GeneralCard {
   imgSource?: string;
   imgAlt?: string;
   bodyText: string | ReactNode;
-  fadeInLeft?: boolean;
   tags?: string[];
   linkHref?: string;
   linkLabel?: string;
@@ -20,7 +19,6 @@ const GeneralCard = ({
   imgSource,
   imgAlt,
   bodyText,
-  fadeInLeft,
   tags,
   accentColor = "#88C0D0",
 }: GeneralCard) => {

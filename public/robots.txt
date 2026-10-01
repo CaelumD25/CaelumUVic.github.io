@@ -1,0 +1,23 @@
+# Allow LinkedIn
+User-agent: LinkedInBot
+Allow: /
+
+# Allow Twitter / X
+User-agent: Twitterbot
+Allow: /
+
+# Allow Slack / iMessage / Meta
+User-agent: facebookexternalhit
+Allow: /
+
+# Allow Google Search
+User-agent: Googlebot
+Allow: /
+
+# Allow Bing Search
+User-agent: bingbot
+Allow: /
+
+# Block all other generic crawlers/bots
+User-agent: *
+Disallow: /
